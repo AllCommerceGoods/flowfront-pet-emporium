@@ -18,7 +18,7 @@ export const CollectionsGrid = () => {
   return (
     <section className="py-12 md:py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">
+        <h2 className="text-3xl md:text-4xl font-black text-foreground mb-8 text-center tracking-tight">
           Shop by Category
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
@@ -39,7 +39,7 @@ export const CollectionsGrid = () => {
                 />
               </div>
               <div className="flex items-center gap-2 pb-4">
-                <span className="font-medium text-card-foreground text-sm">{cat.name}</span>
+                <span className="font-bold text-card-foreground text-sm">{cat.name}</span>
                 <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
               </div>
             </Link>
