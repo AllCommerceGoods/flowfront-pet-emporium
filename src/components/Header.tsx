@@ -20,12 +20,12 @@ export const Header = () => {
 
       {/* Main header */}
       <div className="border-b border-border">
-        <div className="container mx-auto flex items-center justify-between py-3 px-4">
-          <Link to="/" className="flex-shrink-0" style={{ background: 'none', border: 'none', boxShadow: 'none', borderRadius: 0, padding: 0 }}>
+        <div className="max-w-7xl mx-auto flex items-center justify-between py-3 px-4">
+          <Link to="/" className="flex-shrink-0">
             <img
               src={logoImg}
               alt="FlowFront Global"
-              style={{ width: '180px', height: 'auto', display: 'block', background: 'transparent' }}
+              className="w-[180px] h-auto block"
             />
           </Link>
 

@@ -14,7 +14,7 @@ export const Footer = () => {
             <img
               src={logoImg}
               alt="FlowFront Global"
-              style={{ width: '180px', height: 'auto', display: 'block', background: 'transparent', border: 'none', boxShadow: 'none', borderRadius: 0, padding: 0 }}
+              className="w-[180px] h-auto block"
             />
             <p className="text-sm opacity-80">
               Your trusted source for quality pet supplies. From dogs to birds and everything in between.
