@@ -14,18 +14,18 @@ export const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-background">
       {/* Promo bar */}
-      <div className="bg-promo text-promo-foreground text-center text-sm py-2 px-4 font-medium">
+      <div className="bg-promo text-promo-foreground text-center text-sm py-2 px-4 font-bold">
         Free Shipping on Orders Over $75 🐾
       </div>
 
       {/* Main header */}
       <div className="border-b border-border">
         <div className="container mx-auto flex items-center justify-between py-3 px-4">
-          <Link to="/" className="flex-shrink-0 bg-transparent">
+          <Link to="/" className="flex-shrink-0" style={{ background: 'none', border: 'none', boxShadow: 'none', borderRadius: 0, padding: 0 }}>
             <img
               src={logoImg}
               alt="FlowFront Global"
-              className="w-[180px] h-auto object-contain block"
+              style={{ width: '180px', height: 'auto', display: 'block', background: 'transparent' }}
             />
           </Link>
 
@@ -48,7 +48,7 @@ export const Header = () => {
             <Link
               key={link.to}
               to={link.to}
-              className="text-nav-foreground font-medium text-sm hover:text-primary transition-colors"
+              className="text-nav-foreground font-bold text-sm hover:text-primary transition-colors"
             >
               {link.label}
             </Link>

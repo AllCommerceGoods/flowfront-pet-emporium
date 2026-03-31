@@ -13,9 +13,9 @@ export const PromoBanners = () => {
             <img src={promoDogImg} alt="Dog supplies" className="absolute inset-0 w-full h-full object-cover" loading="lazy" width={800} height={512} />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/40 to-transparent" />
             <div className="relative z-10 flex flex-col justify-end h-full p-8 md:p-10">
-              <h3 className="text-2xl font-bold text-primary-foreground">Dog Supplies</h3>
-              <p className="text-primary-foreground/80 mt-1">Toys, food, accessories, and more for your best friend.</p>
-              <Button asChild variant="default" size="sm" className="mt-4 w-fit">
+              <h3 className="text-2xl font-black text-primary-foreground">Dog Supplies</h3>
+              <p className="text-primary-foreground/80 mt-1 font-semibold">Toys, food, accessories, and more for your best friend.</p>
+              <Button asChild variant="default" size="sm" className="mt-4 w-fit rounded-full font-bold px-6">
                 <Link to="/shop">
                   Shop Dogs <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -27,9 +27,9 @@ export const PromoBanners = () => {
             <img src={promoCatImg} alt="Cat supplies" className="absolute inset-0 w-full h-full object-cover" loading="lazy" width={800} height={512} />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/40 to-transparent" />
             <div className="relative z-10 flex flex-col justify-end h-full p-8 md:p-10">
-              <h3 className="text-2xl font-bold text-primary-foreground">Cat Supplies</h3>
-              <p className="text-primary-foreground/80 mt-1">Everything your feline friends need to be happy and healthy.</p>
-              <Button asChild variant="default" size="sm" className="mt-4 w-fit">
+              <h3 className="text-2xl font-black text-primary-foreground">Cat Supplies</h3>
+              <p className="text-primary-foreground/80 mt-1 font-semibold">Everything your feline friends need to be happy and healthy.</p>
+              <Button asChild variant="default" size="sm" className="mt-4 w-fit rounded-full font-bold px-6">
                 <Link to="/shop">
                   Shop Cats <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>

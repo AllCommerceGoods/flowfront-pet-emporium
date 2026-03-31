@@ -12,19 +12,19 @@ export const HeroSection = () => {
       </div>
       <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
         <div className="max-w-2xl space-y-6">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-foreground leading-tight tracking-tight">
             Everything Your <span className="text-primary">Pets</span> Need, All in One Place
           </h1>
-          <p className="text-lg text-muted-foreground max-w-lg">
+          <p className="text-lg text-muted-foreground max-w-lg font-semibold">
             Premium supplies for dogs, cats, birds, and small animals. Quality products from trusted brands, delivered to your door.
           </p>
           <div className="flex gap-4">
-            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full font-bold px-8 py-3 text-base">
               <Link to="/shop">
                 Shop Now <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg">
+            <Button asChild variant="outline" size="lg" className="rounded-full font-bold px-8 py-3 text-base">
               <Link to="/about">Learn More</Link>
             </Button>
           </div>
