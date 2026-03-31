@@ -1,6 +1,6 @@
-export const BrandLogos = () => {
-  const brands = ["Roudybush"];
+import roudybushLogo from "@/assets/roudybush-logo.png";
 
+export const BrandLogos = () => {
   return (
     <section className="py-10 border-t border-border">
       <div className="container mx-auto px-4">
@@ -8,11 +8,11 @@ export const BrandLogos = () => {
           Brands We Carry
         </h2>
         <div className="flex items-center justify-center gap-12 flex-wrap">
-          {brands.map((brand) => (
-            <span key={brand} className="text-xl font-bold text-muted-foreground/60">
-              {brand}
-            </span>
-          ))}
+          <img
+            src={roudybushLogo}
+            alt="Roudybush"
+            className="w-[160px] h-auto object-contain"
+          />
         </div>
       </div>
     </section>
