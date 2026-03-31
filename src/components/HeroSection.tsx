@@ -1,11 +1,16 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import heroImg from "@/assets/hero-pets.jpg";
 
 export const HeroSection = () => {
   return (
     <section className="relative bg-accent overflow-hidden">
-      <div className="container mx-auto px-4 py-16 md:py-24">
+      <div className="absolute inset-0">
+        <img src={heroImg} alt="Happy pets" className="w-full h-full object-cover" width={1920} height={768} />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-transparent" />
+      </div>
+      <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
         <div className="max-w-2xl space-y-6">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
             Everything Your <span className="text-primary">Pets</span> Need, All in One Place

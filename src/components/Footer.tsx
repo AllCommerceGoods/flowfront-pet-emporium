@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Mail, MapPin } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import logoImg from "@/assets/flowfront-logo-alt.png";
+import logoImg from "@/assets/flowfront-logo-dark.png";
 
 export const Footer = () => {
   return (
@@ -11,7 +11,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <img src={logoImg} alt="FlowFront Global" className="h-12 w-auto object-contain brightness-0 invert" />
+            <img src={logoImg} alt="FlowFront Global" className="w-[180px] h-auto object-contain" />
             <p className="text-sm opacity-80">
               Your trusted source for quality pet supplies. From dogs to birds and everything in between.
             </p>
@@ -37,11 +37,17 @@ export const Footer = () => {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span>Lancaster, California</span>
+                <div>
+                  <span className="font-medium block">Illinois Warehouse</span>
+                  <span>4711 N Lamon Ave, STE 12<br />Chicago, IL 60630</span>
+                </div>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span>2020 NE Aloclek Dr #118, Hillsboro, OR 97124</span>
+                <div>
+                  <span className="font-medium block">Oregon Address</span>
+                  <span>1982 NE 25th Ave, STE 4<br />Hillsboro, OR 97124</span>
+                </div>
               </li>
             </ul>
           </div>
