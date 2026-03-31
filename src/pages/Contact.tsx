@@ -51,8 +51,8 @@ const Contact = () => {
                     <MapPin className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-medium text-foreground">Headquarters</h3>
-                    <p className="text-muted-foreground">Lancaster, California</p>
+                    <h3 className="font-medium text-foreground">Illinois Warehouse</h3>
+                    <p className="text-muted-foreground">4711 N Lamon Ave, STE 12<br />Chicago, IL 60630</p>
                   </div>
                 </div>
 
@@ -61,8 +61,8 @@ const Contact = () => {
                     <MapPin className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-medium text-foreground">Distribution Center</h3>
-                    <p className="text-muted-foreground">2020 NE Aloclek Dr #118<br />Hillsboro, OR 97124</p>
+                    <h3 className="font-medium text-foreground">Oregon Address</h3>
+                    <p className="text-muted-foreground">1982 NE 25th Ave, STE 4<br />Hillsboro, OR 97124</p>
                   </div>
                 </div>
               </div>

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Search, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CartDrawer } from "@/components/CartDrawer";
-import logoImg from "@/assets/flowfront-logo.png";
+import logoImg from "@/assets/flowfront-logo-light.png";
 
 const navLinks = [
   { label: "Shop All", to: "/shop" },
@@ -25,7 +25,7 @@ export const Header = () => {
             <img
               src={logoImg}
               alt="FlowFront Global"
-              className="h-12 w-auto object-contain"
+              className="w-[180px] h-auto object-contain"
             />
           </Link>
 
