@@ -21,11 +21,11 @@ export const Header = () => {
       {/* Main header */}
       <div className="border-b border-border">
         <div className="container mx-auto flex items-center justify-between py-3 px-4">
-          <Link to="/" className="flex-shrink-0">
+          <Link to="/" className="flex-shrink-0 bg-transparent">
             <img
               src={logoImg}
               alt="FlowFront Global"
-              className="w-[180px] h-auto object-contain"
+              className="w-[180px] h-auto object-contain block"
             />
           </Link>
 
