@@ -12,7 +12,7 @@ export const HeroSection = () => {
       </div>
       <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
         <div className="max-w-2xl space-y-6">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-foreground leading-tight tracking-tight">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-foreground leading-[1.05] tracking-tight">
             Everything Your <span className="text-primary">Pets</span> Need, All in One Place
           </h1>
           <p className="text-lg text-muted-foreground max-w-lg font-semibold">

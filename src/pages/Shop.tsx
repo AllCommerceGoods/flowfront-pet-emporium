@@ -12,7 +12,7 @@ const Shop = () => {
       <Header />
       <main className="flex-1">
         <div className="container mx-auto px-4 py-12">
-          <h1 className="text-3xl md:text-4xl font-black text-foreground mb-8">Shop All Products</h1>
+          <h1 className="text-3xl md:text-4xl font-extrabold text-foreground mb-8 tracking-tight">Shop All Products</h1>
 
           {products.length > 0 ? (
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

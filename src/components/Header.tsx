@@ -48,7 +48,7 @@ export const Header = () => {
             <Link
               key={link.to}
               to={link.to}
-              className="text-nav-foreground font-bold text-sm hover:text-primary transition-colors"
+              className="text-nav-foreground font-semibold text-sm uppercase tracking-wide hover:text-primary transition-colors"
             >
               {link.label}
             </Link>

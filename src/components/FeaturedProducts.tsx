@@ -8,7 +8,7 @@ export const FeaturedProducts = () => {
   return (
     <section className="py-12 md:py-16 bg-muted/30">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-black text-foreground mb-8 text-center tracking-tight">
+        <h2 className="text-2xl md:text-3xl font-extrabold text-foreground mb-8 text-center tracking-tight">
           Featured Products
         </h2>
 

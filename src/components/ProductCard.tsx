@@ -15,13 +15,13 @@ export const ProductCard = ({ product }: ProductCardProps) => {
 
   return (
     <Link to={`/product/${product.handle}`} className="group block">
-      <div className="border border-border rounded-lg overflow-hidden bg-card hover:shadow-md transition-shadow">
-        <div className="aspect-square bg-muted relative overflow-hidden">
+      <div className="border border-border rounded-xl overflow-hidden bg-card hover:shadow-lg transition-all duration-200">
+        <div className="aspect-square bg-white relative p-4">
           {imageUrl ? (
             <img
               src={imageUrl}
               alt={product.images[0]?.altText || product.title}
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
               loading="lazy"
             />
           ) : (
@@ -30,23 +30,23 @@ export const ProductCard = ({ product }: ProductCardProps) => {
             </div>
           )}
           {!isAvailable && (
-            <Badge className="absolute top-2 left-2 bg-destructive text-destructive-foreground">
+            <Badge className="absolute top-2 left-2 bg-destructive text-destructive-foreground text-xs font-semibold">
               Sold Out
             </Badge>
           )}
         </div>
         <div className="p-4 space-y-2">
-          <h3 className="font-bold text-card-foreground line-clamp-2 text-sm">{product.title}</h3>
+          <h3 className="font-semibold text-card-foreground line-clamp-2 text-sm leading-snug">{product.title}</h3>
           <div className="flex items-center justify-between">
-            <span className="text-lg font-extrabold text-foreground">
+            <span className="text-xl font-extrabold text-foreground">
               ${parseFloat(product.price).toFixed(2)}
             </span>
             <Button
               size="sm"
-              variant={isAvailable ? "default" : "secondary"}
-              disabled={!isAvailable}
+              variant="secondary"
+              disabled
               onClick={(e) => e.preventDefault()}
-              className="h-8 rounded-full"
+              className="h-8 rounded-full opacity-40"
             >
               <ShoppingCart className="h-4 w-4" />
             </Button>
