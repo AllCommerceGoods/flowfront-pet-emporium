@@ -6,6 +6,30 @@ import nibbles5 from "@/assets/products/roudybush-nibles-5.jpg";
 import nibbles6 from "@/assets/products/roudybush-nibles-6.jpg";
 import nibbles7 from "@/assets/products/roudybush-nibles-7.jpg";
 import nibbles8 from "@/assets/products/roudybush-nibles-8.jpg";
+import mini22_1 from "@/assets/products/roudybush-mini22-1.jpg";
+import mini22_2 from "@/assets/products/roudybush-mini22-2.jpg";
+import mini22_3 from "@/assets/products/roudybush-mini22-3.jpg";
+import mini22_4 from "@/assets/products/roudybush-mini22-4.jpg";
+import mini22_5 from "@/assets/products/roudybush-mini22-5.jpg";
+import mini22_6 from "@/assets/products/roudybush-mini22-6.jpg";
+import mini22_7 from "@/assets/products/roudybush-mini22-7.jpg";
+import mini22_8 from "@/assets/products/roudybush-mini22-8.jpg";
+import mini10_1 from "@/assets/products/roudybush-mini10-1.jpg";
+import mini10_2 from "@/assets/products/roudybush-mini10-2.jpg";
+import mini10_3 from "@/assets/products/roudybush-mini10-3.jpg";
+import mini10_4 from "@/assets/products/roudybush-mini10-4.jpg";
+import mini10_5 from "@/assets/products/roudybush-mini10-5.jpg";
+import mini10_6 from "@/assets/products/roudybush-mini10-6.jpg";
+import mini10_7 from "@/assets/products/roudybush-mini10-7.jpg";
+import mini10_8 from "@/assets/products/roudybush-mini10-8.jpg";
+import crumbles1 from "@/assets/products/roudybush-crumbles-1.jpg";
+import crumbles2 from "@/assets/products/roudybush-crumbles-2.jpg";
+import crumbles3 from "@/assets/products/roudybush-crumbles-3.jpg";
+import crumbles4 from "@/assets/products/roudybush-crumbles-4.jpg";
+import crumbles5 from "@/assets/products/roudybush-crumbles-5.jpg";
+import crumbles6 from "@/assets/products/roudybush-crumbles-6.jpg";
+import crumbles7 from "@/assets/products/roudybush-crumbles-7.jpg";
+import crumbles8 from "@/assets/products/roudybush-crumbles-8.jpg";
 import jolly1 from "@/assets/products/jolly-ball-1.jpg";
 import jolly2 from "@/assets/products/jolly-ball-2.jpg";
 
@@ -51,10 +75,14 @@ export const staticProducts: StaticProduct[] = [
     currencyCode: "USD",
     category: "Birds",
     images: [
-      { url: nibbles1, altText: "RoudyBush Mini 22oz bag front" },
-      { url: nibbles2, altText: "RoudyBush Mini with macaw" },
-      { url: nibbles3, altText: "RoudyBush Mini product info" },
-      { url: nibbles6, altText: "RoudyBush key benefits" },
+      { url: mini22_1, altText: "RoudyBush Mini 22oz bag front" },
+      { url: mini22_2, altText: "RoudyBush Mini with macaw" },
+      { url: mini22_3, altText: "RoudyBush Mini 1.3 pound with macaw" },
+      { url: mini22_4, altText: "RoudyBush Mini nutritional info" },
+      { url: mini22_5, altText: "RoudyBush key benefits" },
+      { url: mini22_6, altText: "RoudyBush for egg-layers" },
+      { url: mini22_7, altText: "RoudyBush feeding tips" },
+      { url: mini22_8, altText: "How to switch to RoudyBush" },
     ],
     availableForSale: false,
   },
@@ -67,10 +95,14 @@ export const staticProducts: StaticProduct[] = [
     currencyCode: "USD",
     category: "Birds",
     images: [
-      { url: nibbles1, altText: "RoudyBush Mini 10lb bag front" },
-      { url: nibbles4, altText: "RoudyBush nutritional info" },
-      { url: nibbles7, altText: "RoudyBush feeding tips" },
-      { url: nibbles8, altText: "How to switch to RoudyBush" },
+      { url: mini10_1, altText: "RoudyBush Mini 10lb bag front" },
+      { url: mini10_2, altText: "RoudyBush key benefits" },
+      { url: mini10_3, altText: "RoudyBush Mini 10 pound with macaw" },
+      { url: mini10_4, altText: "RoudyBush Mini with macaw and bag" },
+      { url: mini10_5, altText: "RoudyBush nutritional info" },
+      { url: mini10_6, altText: "RoudyBush for egg-layers" },
+      { url: mini10_7, altText: "RoudyBush feeding tips" },
+      { url: mini10_8, altText: "How to switch to RoudyBush" },
     ],
     availableForSale: false,
   },
@@ -83,10 +115,14 @@ export const staticProducts: StaticProduct[] = [
     currencyCode: "USD",
     category: "Birds",
     images: [
-      { url: nibbles1, altText: "RoudyBush Crumbles 10lb bag front" },
-      { url: nibbles5, altText: "RoudyBush for egg-layers" },
-      { url: nibbles6, altText: "RoudyBush key benefits" },
-      { url: nibbles4, altText: "RoudyBush nutritional info" },
+      { url: crumbles1, altText: "RoudyBush Crumbles 10lb bag front" },
+      { url: crumbles2, altText: "RoudyBush Crumbles 10 pound with macaw" },
+      { url: crumbles3, altText: "RoudyBush Crumbles with macaw and bag" },
+      { url: crumbles4, altText: "RoudyBush Crumbles nutritional info" },
+      { url: crumbles5, altText: "RoudyBush key benefits" },
+      { url: crumbles6, altText: "RoudyBush for egg-layers" },
+      { url: crumbles7, altText: "RoudyBush feeding tips" },
+      { url: crumbles8, altText: "How to switch to RoudyBush" },
     ],
     availableForSale: false,
   },
