@@ -32,6 +32,11 @@ import crumbles7 from "@/assets/products/roudybush-crumbles-7.jpg";
 import crumbles8 from "@/assets/products/roudybush-crumbles-8.jpg";
 import jolly1 from "@/assets/products/jolly-ball-1.jpg";
 import jolly2 from "@/assets/products/jolly-ball-2.jpg";
+import pbChicken1 from "@/assets/products/purebites-chicken-1.jpg";
+import pbChicken2 from "@/assets/products/purebites-chicken-2.jpg";
+import pbChicken3 from "@/assets/products/purebites-chicken-3.jpg";
+import pbChicken4 from "@/assets/products/purebites-chicken-4.jpg";
+import pbChicken5 from "@/assets/products/purebites-chicken-5.jpg";
 
 export interface StaticProduct {
   id: string;
@@ -137,6 +142,23 @@ export const staticProducts: StaticProduct[] = [
     images: [
       { url: jolly1, altText: "Jolly Pets Push-n-Play Ball blue" },
       { url: jolly2, altText: "Jolly Pets Push-n-Play Ball size reference" },
+    ],
+    availableForSale: false,
+  },
+  {
+    id: "purebites-chicken-breast",
+    handle: "purebites-chicken-breast",
+    title: "PureBites Freeze Dried Chicken Breast Dog Treats, 1.75lb",
+    description: "Made with only 1 simple human grade ingredient: 100% pure American chicken breast. Proudly sourced and freeze dried RAW in the USA. Delicately freeze dried to help preserve fresh RAW whole food, locking in the taste dogs crave. High in protein with only 3 calories per average treat. 100% natural with no artificial colors, fillers, or sweeteners. Ideal for dogs with allergies or on restricted diets. Feed as a healthy treat, topper, or training aid. Approximately 1000 treats per 1.75lb bag. Packaged in recyclable bags and backed by a 100% satisfaction guarantee.",
+    price: "28.99",
+    currencyCode: "USD",
+    category: "Dogs",
+    images: [
+      { url: pbChicken1, altText: "PureBites Chicken Breast bag front" },
+      { url: pbChicken2, altText: "PureBites Chicken Breast bag back" },
+      { url: pbChicken3, altText: "PureBites benefits with French Bulldog" },
+      { url: pbChicken4, altText: "PureBites RAW freeze dried process" },
+      { url: pbChicken5, altText: "PureBites full product lineup" },
     ],
     availableForSale: false,
   },
