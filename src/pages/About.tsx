@@ -25,10 +25,19 @@ const About = () => {
               the very best for your furry, feathered, and scaly friends.
             </p>
 
-            <h2 className="text-2xl font-bold text-foreground mt-10">Our Distribution</h2>
+            <h2 className="text-2xl font-bold text-foreground mt-10">Our Locations</h2>
             <p>
-              With our distribution center located at 2020 NE Aloclek Dr #118, Hillsboro, OR 97124, we're equipped to
-              efficiently serve customers across the country, ensuring your orders arrive quickly and in perfect condition.
+              We operate from two locations to efficiently serve customers across the country:
+            </p>
+            <p>
+              <strong>Illinois Warehouse</strong><br />
+              4711 N Lamon Ave, STE 12<br />
+              Chicago, IL 60630
+            </p>
+            <p>
+              <strong>Oregon Address</strong><br />
+              1982 NE 25th Ave, STE 4<br />
+              Hillsboro, OR 97124
             </p>
 
             <h2 className="text-2xl font-bold text-foreground mt-10">Why Choose Us</h2>
