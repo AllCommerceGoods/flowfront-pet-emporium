@@ -43,12 +43,12 @@ const ProductDetail = () => {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Images */}
             <div className="space-y-4">
-              <div className="aspect-square rounded-lg overflow-hidden bg-muted">
+              <div className="aspect-square rounded-lg overflow-hidden bg-white p-6">
                 {images[selectedImage] ? (
                   <img
                     src={images[selectedImage].url}
                     alt={images[selectedImage].altText || product.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center text-muted-foreground">No image</div>
@@ -64,7 +64,7 @@ const ProductDetail = () => {
                         i === selectedImage ? "border-primary" : "border-border"
                       }`}
                     >
-                      <img src={img.url} alt="" className="w-full h-full object-cover" />
+                      <img src={img.url} alt="" className="w-full h-full object-contain bg-white p-1" />
                     </button>
                   ))}
                 </div>
