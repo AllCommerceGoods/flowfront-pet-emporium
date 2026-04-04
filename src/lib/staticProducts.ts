@@ -95,7 +95,7 @@ export const staticProducts: StaticProduct[] = [
     handle: "jolly-pets-push-n-play-ball",
     title: "Jolly Pets Push-n-Play Ball - Medium, Blue, 6 inches",
     description: "Durable push-and-play ball designed for medium-sized dogs (20-60 lbs). Made of hard plastic for constant motion play — perfect for dogs that love chasing, pushing, and herding. Floats on water for land and water play.",
-    price: "9.99",
+    price: "19.98",
     currencyCode: "USD",
     category: "Dogs",
     images: [
