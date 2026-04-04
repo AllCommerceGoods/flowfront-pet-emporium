@@ -13,17 +13,17 @@ export const BrandLogos = () => {
           <img
             src={roudybushLogo}
             alt="Roudybush"
-            className="h-[50px] w-auto object-contain"
+            className="w-[160px] h-auto object-contain"
           />
           <img
             src={pureBitesLogo}
             alt="PureBites"
-            className="h-[50px] w-auto object-contain"
+            className="w-[160px] h-auto object-contain"
           />
           <img
             src={jollyPetsLogo}
             alt="Jolly Pets"
-            className="h-[60px] w-auto object-contain"
+            className="w-[160px] h-auto object-contain"
           />
         </div>
       </div>
