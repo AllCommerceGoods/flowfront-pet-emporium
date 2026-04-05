@@ -7,11 +7,11 @@ import fishImg from "@/assets/category-fish.jpg";
 import rabbitImg from "@/assets/category-rabbit.jpg";
 
 const categories = [
-  { name: "Dogs", image: dogImg, query: "product_type:Dog" },
-  { name: "Cats", image: catImg, query: "product_type:Cat" },
-  { name: "Birds", image: birdImg, query: "product_type:Bird" },
-  { name: "Aquatics", image: fishImg, query: "product_type:Aquatics" },
-  { name: "Small Animals", image: rabbitImg, query: "product_type:Small Animal" },
+  { name: "Dogs", image: dogImg, category: "Dogs" },
+  { name: "Cats", image: catImg, category: "Cats" },
+  { name: "Birds", image: birdImg, category: "Birds" },
+  { name: "Aquatics", image: fishImg, category: "Aquatics" },
+  { name: "Small Animals", image: rabbitImg, category: "Small Animals" },
 ];
 
 export const CollectionsGrid = () => {
@@ -25,7 +25,7 @@ export const CollectionsGrid = () => {
           {categories.map((cat) => (
             <Link
               key={cat.name}
-              to="/shop"
+              to={`/shop?category=${encodeURIComponent(cat.category)}`}
               className="group flex flex-col items-center gap-3 rounded-xl border border-border bg-card hover:shadow-lg hover:border-primary/30 transition-all overflow-hidden"
             >
               <div className="w-full aspect-square overflow-hidden">
