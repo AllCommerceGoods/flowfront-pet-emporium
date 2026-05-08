@@ -5,8 +5,6 @@ import { Footer } from "@/components/Footer";
 import { getStaticProductByHandle } from "@/lib/staticProducts";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart, ArrowLeft } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
-import { NotifyMeModal } from "@/components/NotifyMeModal";
 
 const ProductDetail = () => {
   const { handle } = useParams<{ handle: string }>();
@@ -29,7 +27,6 @@ const ProductDetail = () => {
   }
 
   const images = product.images;
-  const isAvailable = product.availableForSale;
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -80,29 +77,14 @@ const ProductDetail = () => {
                 </p>
               </div>
 
-              {!isAvailable && (
-                <Badge className="bg-destructive text-destructive-foreground">Sold Out</Badge>
-              )}
-
               <Button
                 size="lg"
                 className="w-full rounded-full font-bold"
-                disabled={!isAvailable}
+                onClick={() => {}}
               >
                 <ShoppingCart className="w-4 h-4 mr-2" />
-                {isAvailable ? "Add to Cart" : "Sold Out"}
+                Add to Cart
               </Button>
-
-              {!isAvailable && (
-                <NotifyMeModal
-                  productTitle={product.title}
-                  trigger={
-                    <Button variant="outline" size="lg" className="w-full rounded-full font-bold">
-                      Notify Me When Available
-                    </Button>
-                  }
-                />
-              )}
 
               {product.description && (
                 <div className="pt-6 border-t border-border">
