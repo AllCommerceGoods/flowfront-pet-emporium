@@ -1,6 +1,8 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import heroImg from "@/assets/hero-pets.jpg";
+import warehouseExterior from "@/assets/warehouse-exterior.jpg";
+import warehouseInterior from "@/assets/warehouse-interior.jpg";
 
 const About = () => {
   return (
@@ -23,19 +25,44 @@ const About = () => {
         <div className="container mx-auto px-4 py-12 md:py-16 max-w-3xl">
           <div className="prose prose-lg text-muted-foreground space-y-6">
             <p>
-              FlowFront Global LLC is a pet supply retailer based in Lancaster, California. We carry a wide range of
-              premium pet products — everything from dog toys and cat supplies to bird food and small animal essentials.
+              FlowFront Global LLC is a pet supply company founded by <strong className="text-foreground">Angel Cardenas</strong> and <strong className="text-foreground">Sebastian Fletes</strong>. What started as a shared passion for animals and entrepreneurship has grown into a business dedicated to delivering premium pet products to customers across the country.
             </p>
 
             <p>
-              Our mission is to provide pet owners with high-quality products from trusted brands at competitive prices.
-              We believe that every pet deserves the best care, and we're committed to making that accessible to all pet families.
+              We carry a wide range of products for dogs, cats, birds, and small animals. From trusted brands like Roudybush, PureBites, and Jolly Pets, we are continuously expanding our selection to bring you the very best for your furry, feathered, and scaly friends.
             </p>
 
             <p>
-              We partner with brands like Roudybush, PureBites, and Jolly Pets and are continuously expanding our selection to bring you
-              the very best for your furry, feathered, and scaly friends.
+              Our mission is simple: provide pet owners with high quality products from trusted brands at competitive prices. We believe every pet deserves the best care, and we are committed to making that accessible to all pet families.
             </p>
+
+            {/* Warehouse Photos */}
+            <h2 className="text-2xl font-extrabold text-foreground mt-10">Our Warehouse</h2>
+            <p>
+              We operate our own warehouse and fulfillment center, allowing us to store inventory, process orders quickly, and ship directly to our customers with care and efficiency.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
+              <div className="rounded-xl overflow-hidden shadow-md">
+                <img
+                  src={warehouseExterior}
+                  alt="FlowFront Global warehouse exterior"
+                  className="w-full h-64 object-cover"
+                />
+                <div className="bg-card p-3 text-center">
+                  <p className="text-sm font-semibold text-card-foreground">Warehouse Exterior</p>
+                </div>
+              </div>
+              <div className="rounded-xl overflow-hidden shadow-md">
+                <img
+                  src={warehouseInterior}
+                  alt="FlowFront Global warehouse interior"
+                  className="w-full h-64 object-cover"
+                />
+                <div className="bg-card p-3 text-center">
+                  <p className="text-sm font-semibold text-card-foreground">Warehouse Interior</p>
+                </div>
+              </div>
+            </div>
 
             <h2 className="text-2xl font-extrabold text-foreground mt-10">Our Locations</h2>
             <p>
@@ -53,13 +80,9 @@ const About = () => {
             </p>
 
             <h2 className="text-2xl font-extrabold text-foreground mt-10">Why Choose Us</h2>
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Wide selection of products for dogs, cats, birds, and small animals</li>
-              <li>Trusted brands and quality-verified products</li>
-              <li>Competitive pricing</li>
-              <li>Fast and reliable shipping</li>
-              <li>Dedicated customer support</li>
-            </ul>
+            <p>
+              We offer a wide selection of products for dogs, cats, birds, and small animals from trusted, quality verified brands. Our pricing is competitive, our shipping is fast and reliable, and our customer support team is always here to help. When you shop with FlowFront Global, you are supporting a small business that truly cares about pets and their owners.
+            </p>
           </div>
         </div>
       </main>
