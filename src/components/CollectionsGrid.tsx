@@ -6,7 +6,7 @@ import catImg from "@/assets/category-cat.jpg";
 import birdImg from "@/assets/category-bird.jpg";
 import fishImg from "@/assets/category-fish.jpg";
 import rabbitImg from "@/assets/category-rabbit.jpg";
-import horsesImg from "@/assets/products/horse-amour-peppermint-1.jpeg";
+import horsesImg from "@/assets/category-horse.jpg";
 
 const categories = [
   { name: "Dogs", image: dogImg, category: "Dogs", gradient: "from-amber-900/70" },

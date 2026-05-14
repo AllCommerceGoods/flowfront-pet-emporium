@@ -6,12 +6,15 @@ import { getStaticProductByHandle } from "@/lib/staticProducts";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart, ArrowLeft, Truck, ShieldCheck, Star, RotateCcw } from "lucide-react";
 import { motion } from "framer-motion";
+import { useLocalCartStore } from "@/stores/localCartStore";
+import { useToast } from "@/hooks/use-toast";
 
-const BRANDS = ["RoudyBush", "PureBites", "Jolly Pets"];
+const BRANDS = ["RoudyBush", "PureBites", "Jolly Pets", "Horse Amour"];
 
-function extractBrand(title: string): string {
-  for (const brand of BRANDS) {
-    if (title.startsWith(brand)) return brand;
+function extractBrand(title: string, brand?: string): string {
+  if (brand) return brand;
+  for (const b of BRANDS) {
+    if (title.startsWith(b)) return b;
   }
   return "";
 }
@@ -20,6 +23,8 @@ const ProductDetail = () => {
   const { handle } = useParams<{ handle: string }>();
   const product = getStaticProductByHandle(handle || "");
   const [selectedImage, setSelectedImage] = useState(0);
+  const addItem = useLocalCartStore((s) => s.addItem);
+  const { toast } = useToast();
 
   if (!product) {
     return (
@@ -39,10 +44,22 @@ const ProductDetail = () => {
   }
 
   const images = product.images;
-  const brand = extractBrand(product.title);
+  const brand = extractBrand(product.title, product.brand);
   const displayTitle = brand
     ? product.title.replace(brand, "").replace(/^[\s\-–]+/, "")
     : product.title;
+
+  const handleAddToCart = () => {
+    addItem({
+      id: product.id,
+      handle: product.handle,
+      title: product.title,
+      price: product.price,
+      image: product.images[0]?.url,
+      imageAlt: product.images[0]?.altText ?? undefined,
+    });
+    toast({ title: "Added to cart", description: product.title, duration: 2000 });
+  };
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -138,17 +155,10 @@ const ProductDetail = () => {
                 ${parseFloat(product.price).toFixed(2)}
               </div>
 
-              {product.availableForSale ? (
-                <div className="inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-600">
-                  <span className="w-2 h-2 rounded-full bg-emerald-500 inline-block" />
-                  In Stock – Ready to Ship
-                </div>
-              ) : (
-                <div className="inline-flex items-center gap-1.5 text-sm font-semibold text-muted-foreground">
-                  <span className="w-2 h-2 rounded-full bg-muted-foreground inline-block" />
-                  Out of Stock
-                </div>
-              )}
+              <div className="inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-600">
+                <span className="w-2 h-2 rounded-full bg-emerald-500 inline-block" />
+                In Stock – Ready to Ship
+              </div>
 
               {/* Description */}
               <div className="border-t border-border pt-5">
@@ -160,10 +170,10 @@ const ProductDetail = () => {
                 <Button
                   size="lg"
                   className="w-full rounded-full font-bold shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/35 hover:-translate-y-0.5 transition-all duration-200 cursor-pointer"
-                  disabled={!product.availableForSale}
+                  onClick={handleAddToCart}
                 >
                   <ShoppingCart className="mr-2 h-5 w-5" />
-                  {product.availableForSale ? "Add to Cart" : "Out of Stock"}
+                  Add to Cart
                 </Button>
               </div>
 

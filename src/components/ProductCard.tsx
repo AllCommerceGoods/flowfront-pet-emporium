@@ -2,27 +2,46 @@ import { Link } from "react-router-dom";
 import { StaticProduct } from "@/lib/staticProducts";
 import { ShoppingCart, Star } from "lucide-react";
 import { motion } from "framer-motion";
+import { useLocalCartStore } from "@/stores/localCartStore";
+import { useToast } from "@/hooks/use-toast";
 
 interface ProductCardProps {
   product: StaticProduct;
   index?: number;
 }
 
-const BRANDS = ["RoudyBush", "PureBites", "Jolly Pets"];
+const BRANDS = ["RoudyBush", "PureBites", "Jolly Pets", "Horse Amour"];
 
-function extractBrand(title: string): string {
+function extractBrand(product: StaticProduct): string {
+  if (product.brand) return product.brand;
   for (const brand of BRANDS) {
-    if (title.startsWith(brand)) return brand;
+    if (product.title.startsWith(brand)) return brand;
   }
   return "";
 }
 
 export const ProductCard = ({ product, index = 0 }: ProductCardProps) => {
   const imageUrl = product.images[0]?.url;
-  const brand = extractBrand(product.title);
+  const brand = extractBrand(product);
   const displayTitle = brand
     ? product.title.replace(brand, "").replace(/^[\s\-–]+/, "")
     : product.title;
+  const addItem = useLocalCartStore((s) => s.addItem);
+  const { toast } = useToast();
+
+  const handleQuickAdd = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    addItem({
+      id: product.id,
+      handle: product.handle,
+      title: product.title,
+      price: product.price,
+      image: imageUrl,
+      imageAlt: product.images[0]?.altText ?? undefined,
+    });
+    toast({ title: "Added to cart", description: product.title, duration: 2000 });
+  };
 
   return (
     <motion.div
@@ -51,10 +70,7 @@ export const ProductCard = ({ product, index = 0 }: ProductCardProps) => {
             {/* Quick add slide-up */}
             <div className="absolute inset-x-0 bottom-0 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out">
               <button
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                }}
+                onClick={handleQuickAdd}
                 className="w-full bg-primary text-primary-foreground py-3 text-[11px] font-bold uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-primary/90 transition-colors cursor-pointer"
               >
                 <ShoppingCart className="h-3.5 w-3.5" />
@@ -87,11 +103,9 @@ export const ProductCard = ({ product, index = 0 }: ProductCardProps) => {
               <span className="text-lg font-extrabold text-foreground">
                 ${parseFloat(product.price).toFixed(2)}
               </span>
-              {product.availableForSale && (
-                <span className="text-[10px] font-bold text-emerald-600 bg-emerald-50 border border-emerald-100 px-2 py-0.5 rounded-full">
-                  In Stock
-                </span>
-              )}
+              <span className="text-[10px] font-bold text-emerald-600 bg-emerald-50 border border-emerald-100 px-2 py-0.5 rounded-full">
+                In Stock
+              </span>
             </div>
           </div>
         </div>
