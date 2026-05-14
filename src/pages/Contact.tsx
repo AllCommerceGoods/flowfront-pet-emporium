@@ -4,34 +4,49 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Mail, MapPin } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-1">
-        <div className="container mx-auto px-4 py-12 md:py-16">
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-8 text-center">Contact Us</h1>
+        <div className="max-w-7xl mx-auto px-4 py-12 md:py-16">
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="text-3xl md:text-4xl font-extrabold text-foreground mb-8 text-center tracking-tight"
+          >
+            Contact Us
+          </motion.h1>
 
-          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+            className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto"
+          >
             {/* Contact Form */}
             <div className="space-y-6">
-              <h2 className="text-xl font-semibold text-foreground">Send Us a Message</h2>
+              <h2 className="text-xl font-bold text-foreground">Send Us a Message</h2>
               <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
                 <div className="grid grid-cols-2 gap-4">
-                  <Input placeholder="First Name" />
-                  <Input placeholder="Last Name" />
+                  <Input placeholder="First Name" className="rounded-lg" />
+                  <Input placeholder="Last Name" className="rounded-lg" />
                 </div>
-                <Input type="email" placeholder="Email Address" />
-                <Input placeholder="Subject" />
-                <Textarea placeholder="Your message..." rows={5} />
-                <Button type="submit" className="w-full">Send Message</Button>
+                <Input type="email" placeholder="Email Address" className="rounded-lg" />
+                <Input placeholder="Subject" className="rounded-lg" />
+                <Textarea placeholder="Your message..." rows={5} className="rounded-lg" />
+                <Button type="submit" className="w-full rounded-full font-bold shadow-lg shadow-primary/20 hover:shadow-xl transition-all duration-300">
+                  Send Message
+                </Button>
               </form>
             </div>
 
             {/* Contact Info */}
             <div className="space-y-8">
-              <h2 className="text-xl font-semibold text-foreground">Get in Touch</h2>
+              <h2 className="text-xl font-bold text-foreground">Get in Touch</h2>
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -39,8 +54,8 @@ const Contact = () => {
                     <Mail className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-medium text-foreground">Email</h3>
-                    <a href="mailto:owner@flowfrontglobal.com" className="text-muted-foreground hover:text-primary transition-colors">
+                    <h3 className="font-bold text-foreground">Email</h3>
+                    <a href="mailto:owner@flowfrontglobal.com" className="text-muted-foreground hover:text-primary transition-colors duration-200">
                       owner@flowfrontglobal.com
                     </a>
                   </div>
@@ -51,7 +66,7 @@ const Contact = () => {
                     <MapPin className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-medium text-foreground">Illinois Warehouse</h3>
+                    <h3 className="font-bold text-foreground">Illinois Warehouse</h3>
                     <p className="text-muted-foreground">4711 N Lamon Ave, STE 12<br />Chicago, IL 60630</p>
                   </div>
                 </div>
@@ -61,13 +76,13 @@ const Contact = () => {
                     <MapPin className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-medium text-foreground">Oregon Address</h3>
+                    <h3 className="font-bold text-foreground">Oregon Address</h3>
                     <p className="text-muted-foreground">1982 NE 25th Ave, STE 4<br />Hillsboro, OR 97124</p>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </main>
       <Footer />
