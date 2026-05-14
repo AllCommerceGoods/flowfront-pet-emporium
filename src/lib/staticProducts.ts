@@ -32,6 +32,19 @@ import crumbles7 from "@/assets/products/roudybush-crumbles-7.jpg";
 import crumbles8 from "@/assets/products/roudybush-crumbles-8.jpg";
 import jolly1 from "@/assets/products/jolly-ball-1.jpg";
 import jolly2 from "@/assets/products/jolly-ball-2.jpg";
+import haPepper1 from "@/assets/products/horse-amour-peppermint-1.jpeg";
+import haPepper2 from "@/assets/products/horse-amour-peppermint-2.jpeg";
+import haPepper3 from "@/assets/products/horse-amour-peppermint-3.jpeg";
+import haPepper4 from "@/assets/products/horse-amour-peppermint-4.jpeg";
+import haPepper5 from "@/assets/products/horse-amour-peppermint-5.jpeg";
+import haPepper6 from "@/assets/products/horse-amour-peppermint-6.jpeg";
+import haPepper7 from "@/assets/products/horse-amour-peppermint-7.jpeg";
+import haApple1 from "@/assets/products/horse-amour-apple-1.jpeg";
+import haApple2 from "@/assets/products/horse-amour-apple-2.jpeg";
+import haApple3 from "@/assets/products/horse-amour-apple-3.jpeg";
+import haApple4 from "@/assets/products/horse-amour-apple-4.jpeg";
+import haApple5 from "@/assets/products/horse-amour-apple-5.jpeg";
+import haApple6 from "@/assets/products/horse-amour-apple-6.jpeg";
 import pbChicken1 from "@/assets/products/purebites-chicken-1.jpg";
 import pbChicken2 from "@/assets/products/purebites-chicken-2.jpg";
 import pbChicken3 from "@/assets/products/purebites-chicken-3.jpg";
@@ -46,6 +59,7 @@ export interface StaticProduct {
   price: string;
   currencyCode: string;
   category: string;
+  brand?: string;
   images: Array<{ url: string; altText: string | null }>;
   availableForSale: boolean;
 }
@@ -159,6 +173,45 @@ export const staticProducts: StaticProduct[] = [
       { url: pbChicken3, altText: "PureBites benefits with French Bulldog" },
       { url: pbChicken4, altText: "PureBites RAW freeze dried process" },
       { url: pbChicken5, altText: "PureBites full product lineup" },
+    ],
+    availableForSale: false,
+  },
+  {
+    id: "horse-amour-bit-wipes-peppermint",
+    handle: "horse-amour-bit-wipes-peppermint",
+    title: "Horse Amour Bit Wipes - Peppermint Scent (40 Count)",
+    description: "Keep your horse's bit clean and fresh with Horse Amour Bit Wipes. Pre-moistened wipes quickly remove dried saliva, debris and buildup from bits and tack in seconds. Made with a 100% natural, food-grade formula with refreshing peppermint scent. Each canister contains 40 generously sized 7x8 inch wipes. Compact enough to fit in any tack box, trailer or grooming bag.",
+    price: "20.99",
+    currencyCode: "USD",
+    category: "Horses",
+    brand: "Horse Amour",
+    images: [
+      { url: haPepper1, altText: "Horse Amour Peppermint Bit Wipes canister" },
+      { url: haPepper2, altText: "Horse Amour Peppermint Bit Wipes in use" },
+      { url: haPepper3, altText: "Horse Amour Peppermint Bit Wipes detail" },
+      { url: haPepper4, altText: "Horse Amour Peppermint Bit Wipes ingredients" },
+      { url: haPepper5, altText: "Horse Amour Peppermint Bit Wipes features" },
+      { url: haPepper6, altText: "Horse Amour Peppermint Bit Wipes size reference" },
+      { url: haPepper7, altText: "Horse Amour Peppermint Bit Wipes lifestyle" },
+    ],
+    availableForSale: false,
+  },
+  {
+    id: "horse-amour-bit-wipes-apple",
+    handle: "horse-amour-bit-wipes-apple",
+    title: "Horse Amour Bit Wipes - Apple Scent (40 Count)",
+    description: "Keep your horse's bit clean and fresh with Horse Amour Bit Wipes. Pre-moistened wipes quickly remove dried saliva, debris and buildup from bits and tack in seconds. Made with a 100% natural, food-grade formula with fresh apple scent your horse will love. Each canister contains 40 generously sized 7x8 inch wipes. Compact enough to fit in any tack box, trailer or grooming bag.",
+    price: "20.99",
+    currencyCode: "USD",
+    category: "Horses",
+    brand: "Horse Amour",
+    images: [
+      { url: haApple1, altText: "Horse Amour Apple Bit Wipes canister" },
+      { url: haApple2, altText: "Horse Amour Apple Bit Wipes in use" },
+      { url: haApple3, altText: "Horse Amour Apple Bit Wipes detail" },
+      { url: haApple4, altText: "Horse Amour Apple Bit Wipes ingredients" },
+      { url: haApple5, altText: "Horse Amour Apple Bit Wipes features" },
+      { url: haApple6, altText: "Horse Amour Apple Bit Wipes lifestyle" },
     ],
     availableForSale: false,
   },

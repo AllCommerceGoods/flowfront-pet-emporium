@@ -1,11 +1,13 @@
 import roudybushLogo from "@/assets/roudybush-logo.png";
 import pureBitesLogo from "@/assets/purebites-logo.png";
 import jollyPetsLogo from "@/assets/jolly-pets-logo.png";
+import horseAmourLogo from "@/assets/horse-amour-logo.jpeg";
 
 const brands = [
   { src: roudybushLogo, alt: "Roudybush" },
   { src: pureBitesLogo, alt: "PureBites" },
   { src: jollyPetsLogo, alt: "Jolly Pets" },
+  { src: horseAmourLogo, alt: "Horse Amour" },
 ];
 
 const marqueeItems = [...brands, ...brands, ...brands, ...brands, ...brands, ...brands];

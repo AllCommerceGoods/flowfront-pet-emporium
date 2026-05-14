@@ -6,6 +6,7 @@ import catImg from "@/assets/category-cat.jpg";
 import birdImg from "@/assets/category-bird.jpg";
 import fishImg from "@/assets/category-fish.jpg";
 import rabbitImg from "@/assets/category-rabbit.jpg";
+import horsesImg from "@/assets/products/horse-amour-peppermint-1.jpeg";
 
 const categories = [
   { name: "Dogs", image: dogImg, category: "Dogs", gradient: "from-amber-900/70" },
@@ -13,6 +14,7 @@ const categories = [
   { name: "Birds", image: birdImg, category: "Birds", gradient: "from-sky-900/65" },
   { name: "Aquatics", image: fishImg, category: "Aquatics", gradient: "from-blue-900/70" },
   { name: "Small Animals", image: rabbitImg, category: "Small Animals", gradient: "from-stone-900/65" },
+  { name: "Horses", image: horsesImg, category: "Horses", gradient: "from-emerald-900/70" },
 ];
 
 export const CollectionsGrid = () => {
@@ -40,7 +42,7 @@ export const CollectionsGrid = () => {
           </Link>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 md:gap-4">
           {categories.map((cat, i) => (
             <motion.div
               key={cat.name}

@@ -22,7 +22,7 @@ export const HeroSection = () => {
           height={1080}
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/97 via-background/75 to-background/5" />
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, hsl(var(--background)) 0%, hsl(var(--background) / 0.82) 45%, hsl(var(--background) / 0.02) 80%)' }} />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-24 md:py-36 relative z-10 w-full">

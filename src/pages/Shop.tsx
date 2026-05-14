@@ -7,7 +7,7 @@ import { PackageOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const categories = ["All", "Dogs", "Cats", "Birds", "Aquatics", "Small Animals"];
+const categories = ["All", "Dogs", "Cats", "Birds", "Aquatics", "Small Animals", "Horses"];
 
 const Shop = () => {
   const [searchParams] = useSearchParams();
