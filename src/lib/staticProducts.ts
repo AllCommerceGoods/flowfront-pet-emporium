@@ -30,6 +30,38 @@ import crumbles5 from "@/assets/products/roudybush-crumbles-5.jpg";
 import crumbles6 from "@/assets/products/roudybush-crumbles-6.jpg";
 import crumbles7 from "@/assets/products/roudybush-crumbles-7.jpg";
 import crumbles8 from "@/assets/products/roudybush-crumbles-8.jpg";
+import crumbles44_1 from "@/assets/products/roudybush-crumbles44-1.jpg";
+import crumbles44_2 from "@/assets/products/roudybush-crumbles44-2.jpg";
+import crumbles44_3 from "@/assets/products/roudybush-crumbles44-3.jpg";
+import crumbles44_4 from "@/assets/products/roudybush-crumbles44-4.jpg";
+import crumbles44_5 from "@/assets/products/roudybush-crumbles44-5.jpg";
+import crumbles44_6 from "@/assets/products/roudybush-crumbles44-6.jpg";
+import crumbles44_7 from "@/assets/products/roudybush-crumbles44-7.jpg";
+import crumbles44_8 from "@/assets/products/roudybush-crumbles44-8.jpg";
+import mini10lb_1 from "@/assets/products/roudybush-mini10lb-1.jpg";
+import mini10lb_2 from "@/assets/products/roudybush-mini10lb-2.jpg";
+import mini10lb_3 from "@/assets/products/roudybush-mini10lb-3.jpg";
+import mini10lb_4 from "@/assets/products/roudybush-mini10lb-4.jpg";
+import mini10lb_5 from "@/assets/products/roudybush-mini10lb-5.jpg";
+import mini10lb_6 from "@/assets/products/roudybush-mini10lb-6.jpg";
+import mini10lb_7 from "@/assets/products/roudybush-mini10lb-7.jpg";
+import mini10lb_8 from "@/assets/products/roudybush-mini10lb-8.jpg";
+import small25lb_1 from "@/assets/products/roudybush-small25lb-1.jpg";
+import small25lb_2 from "@/assets/products/roudybush-small25lb-2.jpg";
+import small25lb_3 from "@/assets/products/roudybush-small25lb-3.jpg";
+import small25lb_4 from "@/assets/products/roudybush-small25lb-4.jpg";
+import small25lb_5 from "@/assets/products/roudybush-small25lb-5.jpg";
+import small25lb_6 from "@/assets/products/roudybush-small25lb-6.jpg";
+import small25lb_7 from "@/assets/products/roudybush-small25lb-7.jpg";
+import small25lb_8 from "@/assets/products/roudybush-small25lb-8.jpg";
+import cablend44_1 from "@/assets/products/roudybush-cablend44-1.jpg";
+import cablend44_2 from "@/assets/products/roudybush-cablend44-2.jpg";
+import cablend44_3 from "@/assets/products/roudybush-cablend44-3.jpg";
+import cablend44_4 from "@/assets/products/roudybush-cablend44-4.jpg";
+import cablend44_5 from "@/assets/products/roudybush-cablend44-5.jpg";
+import cablend44_6 from "@/assets/products/roudybush-cablend44-6.jpg";
+import cablend44_7 from "@/assets/products/roudybush-cablend44-7.jpg";
+import cablend44_8 from "@/assets/products/roudybush-cablend44-8.jpg";
 import jolly1 from "@/assets/products/jolly-ball-1.jpg";
 import jolly2 from "@/assets/products/jolly-ball-2.jpg";
 import haPepper1 from "@/assets/products/horse-amour-peppermint-1.jpeg";
@@ -212,6 +244,90 @@ export const staticProducts: StaticProduct[] = [
       { url: haApple4, altText: "Horse Amour Apple Bit Wipes ingredients" },
       { url: haApple5, altText: "Horse Amour Apple Bit Wipes features" },
       { url: haApple6, altText: "Horse Amour Apple Bit Wipes lifestyle" },
+    ],
+    availableForSale: false,
+  },
+  {
+    id: "roudybush-crumbles-44oz",
+    handle: "roudybush-crumbles-44oz",
+    title: "RoudyBush Daily Maintenance Bird Food, Crumbles, 44-Ounce",
+    description: "Get optimal nutrition and reduced waste when feeding your birds this wholesome blend of corn, wheat, soy, rosemary, yucca, 11% protein, 9% fat, and other essential vitamins and minerals. These bird pellets are perfect as a transition food when switching your bird from old food to RoudyBush — no additional vitamin or mineral supplements needed. Perfect for birds three inches or taller, including conures, lovebirds, and parakeets. Pelletized diets offer optimal nutrition with significantly reduced waste compared to traditional seed diets. Scientifically formulated since 1985.",
+    price: "16.95",
+    currencyCode: "USD",
+    category: "Birds",
+    brand: "RoudyBush",
+    images: [
+      { url: crumbles44_1, altText: "RoudyBush Crumbles 44oz bag front" },
+      { url: crumbles44_2, altText: "RoudyBush Crumbles 44oz with bird" },
+      { url: crumbles44_3, altText: "RoudyBush Crumbles 44oz detail" },
+      { url: crumbles44_4, altText: "RoudyBush Crumbles 44oz nutritional info" },
+      { url: crumbles44_5, altText: "RoudyBush Crumbles key benefits" },
+      { url: crumbles44_6, altText: "RoudyBush Crumbles for egg-layers" },
+      { url: crumbles44_7, altText: "RoudyBush Crumbles feeding tips" },
+      { url: crumbles44_8, altText: "How to switch to RoudyBush Crumbles" },
+    ],
+    availableForSale: false,
+  },
+  {
+    id: "roudybush-mini-10-pound",
+    handle: "roudybush-mini-10-pound",
+    title: "RoudyBush Daily Maintenance Bird Food, Mini, 10-Pound",
+    description: "Get optimal nutrition without additional supplements when feeding your bird this wholesome blend of corn, wheat, soy, rosemary, yucca, and other essential vitamins and minerals. These bird pellets are ideal for breeding birds feeding and weaning chicks — providing extra protein, calcium, and Vitamin D3 needed for growth and helping put back the weight lost in the weaning process. Mini pellets perfect for birds three inches or taller including conures, lovebirds, and parakeets. Pelletized diets offer optimal nutrition with significantly reduced waste. Scientifically formulated since 1985.",
+    price: "39.95",
+    currencyCode: "USD",
+    category: "Birds",
+    brand: "RoudyBush",
+    images: [
+      { url: mini10lb_1, altText: "RoudyBush Mini 10-Pound bag front" },
+      { url: mini10lb_2, altText: "RoudyBush Mini 10-Pound with bird" },
+      { url: mini10lb_3, altText: "RoudyBush Mini 10-Pound detail" },
+      { url: mini10lb_4, altText: "RoudyBush Mini 10-Pound nutritional info" },
+      { url: mini10lb_5, altText: "RoudyBush Mini key benefits" },
+      { url: mini10lb_6, altText: "RoudyBush Mini for egg-layers" },
+      { url: mini10lb_7, altText: "RoudyBush Mini feeding tips" },
+      { url: mini10lb_8, altText: "How to switch to RoudyBush Mini" },
+    ],
+    availableForSale: false,
+  },
+  {
+    id: "roudybush-small-25-pound",
+    handle: "roudybush-small-25-pound",
+    title: "RoudyBush Daily Maintenance Bird Food, Small, 25-Pound",
+    description: "General maintenance and nutrition for healthy adult birds in an economical 25-pound bulk bag. Made with ground corn, ground wheat, soy meal, soy oil, alfalfa, calcium carbonate, dicalcium phosphate, and essential vitamins and minerals. Small pellet size suitable for a wide variety of birds. No additional vitamin or mineral supplements needed. Pelletized diets offer optimal nutrition with significantly reduced waste compared to traditional seed diets. Scientifically formulated by RoudyBush since 1985.",
+    price: "75.95",
+    currencyCode: "USD",
+    category: "Birds",
+    brand: "RoudyBush",
+    images: [
+      { url: small25lb_1, altText: "RoudyBush Small 25-Pound bag front" },
+      { url: small25lb_2, altText: "RoudyBush Small 25-Pound with bird" },
+      { url: small25lb_3, altText: "RoudyBush Small 25-Pound detail" },
+      { url: small25lb_4, altText: "RoudyBush Small 25-Pound nutritional info" },
+      { url: small25lb_5, altText: "RoudyBush Small key benefits" },
+      { url: small25lb_6, altText: "RoudyBush Small for egg-layers" },
+      { url: small25lb_7, altText: "RoudyBush Small feeding tips" },
+      { url: small25lb_8, altText: "How to switch to RoudyBush Small" },
+    ],
+    availableForSale: false,
+  },
+  {
+    id: "roudybush-california-blend-44oz",
+    handle: "roudybush-california-blend-44oz",
+    title: "RoudyBush California Blend Bird Food, Mini Pellets, 44-Ounce",
+    description: "A flavorful twist on the classic Daily Maintenance formula — California Blend mixes RoudyBush pellets with dried peaches, apricots, plums, bell peppers, carrots, tomatoes, and cabbage for added enrichment. Perfect as a transition food when switching your bird from old food to RoudyBush, with no additional vitamin or mineral supplements needed. Mini pellets ideal for birds three inches or taller, including conures, lovebirds, and parakeets. Offers optimal nutrition with significantly reduced waste compared to traditional seed diets. Scientifically formulated since 1985.",
+    price: "24.95",
+    currencyCode: "USD",
+    category: "Birds",
+    brand: "RoudyBush",
+    images: [
+      { url: cablend44_1, altText: "RoudyBush California Blend 44oz bag front" },
+      { url: cablend44_2, altText: "RoudyBush California Blend with bird" },
+      { url: cablend44_3, altText: "RoudyBush California Blend detail" },
+      { url: cablend44_4, altText: "RoudyBush California Blend nutritional info" },
+      { url: cablend44_5, altText: "RoudyBush California Blend key benefits" },
+      { url: cablend44_6, altText: "RoudyBush California Blend ingredients" },
+      { url: cablend44_7, altText: "RoudyBush California Blend feeding tips" },
+      { url: cablend44_8, altText: "How to switch to RoudyBush California Blend" },
     ],
     availableForSale: false,
   },
