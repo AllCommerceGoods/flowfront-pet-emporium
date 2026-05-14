@@ -5,6 +5,7 @@ import { CollectionsGrid } from "@/components/CollectionsGrid";
 import { FeaturedProducts } from "@/components/FeaturedProducts";
 import { PromoBanners } from "@/components/PromoBanners";
 import { BrandLogos } from "@/components/BrandLogos";
+import { TrustBar } from "@/components/TrustBar";
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
       <Header />
       <main className="flex-1">
         <HeroSection />
+        <TrustBar />
         <CollectionsGrid />
         <FeaturedProducts />
         <PromoBanners />
