@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import { StaticProduct } from "@/lib/staticProducts";
-import { ShoppingCart, Star } from "lucide-react";
+import { ShoppingCart } from "lucide-react";
 import { motion } from "framer-motion";
 import { useLocalCartStore } from "@/stores/localCartStore";
 import { useToast } from "@/hooks/use-toast";
+import { StarRating } from "@/components/StarRating";
 
 interface ProductCardProps {
   product: StaticProduct;
@@ -89,15 +90,9 @@ export const ProductCard = ({ product, index = 0 }: ProductCardProps) => {
             </h3>
 
             {/* Stars */}
-            <div className="flex items-center gap-1">
-              {[1, 2, 3, 4, 5].map((s) => (
-                <Star
-                  key={s}
-                  className={`h-3 w-3 ${s <= 4 ? "fill-amber-400 text-amber-400" : "fill-amber-200 text-amber-200"}`}
-                />
-              ))}
-              <span className="text-[10px] text-muted-foreground ml-1 font-medium">(4.8)</span>
-            </div>
+            {product.rating != null && (
+              <StarRating rating={product.rating} size="sm" />
+            )}
 
             <div className="flex items-center justify-between pt-1">
               <span className="text-lg font-extrabold text-foreground">

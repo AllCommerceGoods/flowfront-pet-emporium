@@ -4,7 +4,8 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { getStaticProductByHandle } from "@/lib/staticProducts";
 import { Button } from "@/components/ui/button";
-import { ShoppingCart, ArrowLeft, Truck, ShieldCheck, Star, RotateCcw } from "lucide-react";
+import { ShoppingCart, ArrowLeft, Truck, ShieldCheck, RotateCcw } from "lucide-react";
+import { StarRating } from "@/components/StarRating";
 import { motion } from "framer-motion";
 import { useLocalCartStore } from "@/stores/localCartStore";
 import { useToast } from "@/hooks/use-toast";
@@ -138,17 +139,12 @@ const ProductDetail = () => {
                 </h1>
 
                 {/* Stars */}
-                <div className="flex items-center gap-2">
-                  <div className="flex items-center gap-0.5">
-                    {[1, 2, 3, 4, 5].map((s) => (
-                      <Star
-                        key={s}
-                        className={`h-4 w-4 ${s <= 4 ? "fill-amber-400 text-amber-400" : "fill-amber-200 text-amber-200"}`}
-                      />
-                    ))}
+                {product.rating != null && (
+                  <div className="flex items-center gap-2">
+                    <StarRating rating={product.rating} size="md" />
+                    <span className="text-sm text-muted-foreground font-medium">out of 5</span>
                   </div>
-                  <span className="text-sm text-muted-foreground font-medium">4.8 out of 5 · 124 reviews</span>
-                </div>
+                )}
               </div>
 
               <div className="text-3xl font-extrabold text-foreground">
