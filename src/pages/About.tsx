@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { motion } from "framer-motion";
 import heroImg from "@/assets/hero-pets.jpg";
 import warehouseExterior from "@/assets/warehouse-exterior.jpg";
 import warehouseInterior from "@/assets/warehouse-interior.jpg";
@@ -17,13 +18,23 @@ const About = () => {
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
-          <div className="absolute bottom-8 left-0 right-0 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="absolute bottom-8 left-0 right-0 text-center"
+          >
             <h1 className="text-4xl md:text-5xl font-extrabold text-foreground tracking-tight">About FlowFront Global</h1>
-          </div>
+          </motion.div>
         </div>
 
-        <div className="container mx-auto px-4 py-12 md:py-16 max-w-3xl">
-          <div className="prose prose-lg text-muted-foreground space-y-6">
+        <div className="max-w-3xl mx-auto px-4 py-12 md:py-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="prose prose-lg text-muted-foreground space-y-6"
+          >
             <p>
               FlowFront Global LLC is a pet supply company founded by <strong className="text-foreground">Angel Cardenas</strong> and <strong className="text-foreground">Sebastian Fletes</strong>. What started as a shared passion for animals and entrepreneurship has grown into a business dedicated to delivering premium pet products to customers across the country.
             </p>
@@ -37,53 +48,90 @@ const About = () => {
             </p>
 
             {/* Warehouse Photos */}
-            <h2 className="text-2xl font-extrabold text-foreground mt-10">Our Warehouse</h2>
-            <p>
-              We operate our own warehouse and fulfillment center, allowing us to store inventory, process orders quickly, and ship directly to our customers with care and efficiency.
-            </p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <h2 className="text-2xl font-extrabold text-foreground mt-10">Our Warehouse</h2>
+              <p>
+                We operate our own warehouse and fulfillment center, allowing us to store inventory, process orders quickly, and ship directly to our customers with care and efficiency.
+              </p>
+            </motion.div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
-              <div className="rounded-xl overflow-hidden shadow-md">
-                <img
-                  src={warehouseExterior}
-                  alt="FlowFront Global warehouse exterior"
-                  className="w-full h-64 object-cover"
-                />
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="rounded-xl overflow-hidden shadow-md group"
+              >
+                <div className="overflow-hidden">
+                  <img
+                    src={warehouseExterior}
+                    alt="FlowFront Global warehouse exterior"
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
                 <div className="bg-card p-3 text-center">
                   <p className="text-sm font-semibold text-card-foreground">Warehouse Exterior</p>
                 </div>
-              </div>
-              <div className="rounded-xl overflow-hidden shadow-md">
-                <img
-                  src={warehouseInterior}
-                  alt="FlowFront Global warehouse interior"
-                  className="w-full h-64 object-cover"
-                />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="rounded-xl overflow-hidden shadow-md group"
+              >
+                <div className="overflow-hidden">
+                  <img
+                    src={warehouseInterior}
+                    alt="FlowFront Global warehouse interior"
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
                 <div className="bg-card p-3 text-center">
                   <p className="text-sm font-semibold text-card-foreground">Warehouse Interior</p>
                 </div>
-              </div>
+              </motion.div>
             </div>
 
-            <h2 className="text-2xl font-extrabold text-foreground mt-10">Our Locations</h2>
-            <p>
-              We operate from two locations to efficiently serve customers across the country:
-            </p>
-            <p>
-              <strong>Illinois Warehouse</strong><br />
-              4711 N Lamon Ave, STE 12<br />
-              Chicago, IL 60630
-            </p>
-            <p>
-              <strong>Oregon Address</strong><br />
-              1982 NE 25th Ave, STE 4<br />
-              Hillsboro, OR 97124
-            </p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <h2 className="text-2xl font-extrabold text-foreground mt-10">Our Locations</h2>
+              <p>
+                We operate from two locations to efficiently serve customers across the country:
+              </p>
+              <p>
+                <strong>Illinois Warehouse</strong><br />
+                4711 N Lamon Ave, STE 12<br />
+                Chicago, IL 60630
+              </p>
+              <p>
+                <strong>Oregon Address</strong><br />
+                1982 NE 25th Ave, STE 4<br />
+                Hillsboro, OR 97124
+              </p>
+            </motion.div>
 
-            <h2 className="text-2xl font-extrabold text-foreground mt-10">Why Choose Us</h2>
-            <p>
-              We offer a wide selection of products for dogs, cats, birds, and small animals from trusted, quality verified brands. Our pricing is competitive, our shipping is fast and reliable, and our customer support team is always here to help. When you shop with FlowFront Global, you are supporting a small business that truly cares about pets and their owners.
-            </p>
-          </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <h2 className="text-2xl font-extrabold text-foreground mt-10">Why Choose Us</h2>
+              <p>
+                We offer a wide selection of products for dogs, cats, birds, and small animals from trusted, quality verified brands. Our pricing is competitive, our shipping is fast and reliable, and our customer support team is always here to help. When you shop with FlowFront Global, you are supporting a small business that truly cares about pets and their owners.
+              </p>
+            </motion.div>
+          </motion.div>
         </div>
       </main>
       <Footer />
