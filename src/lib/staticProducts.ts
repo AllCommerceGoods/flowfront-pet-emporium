@@ -130,6 +130,36 @@ import aqClarifier5 from "@/assets/products/aqueon-water-clarifier-5.jpg";
 import aqClarifier6 from "@/assets/products/aqueon-water-clarifier-6.jpg";
 import aqClarifier7 from "@/assets/products/aqueon-water-clarifier-7.jpg";
 import aqClarifier8 from "@/assets/products/aqueon-water-clarifier-8.jpg";
+import zmTurtleCombo1 from "@/assets/products/zoo-med-turtle-combo-pack-1.jpg";
+import zmTurtleCombo2 from "@/assets/products/zoo-med-turtle-combo-pack-2.jpg";
+import zmTurtleCombo3 from "@/assets/products/zoo-med-turtle-combo-pack-3.jpg";
+import zmTurtleCombo4 from "@/assets/products/zoo-med-turtle-combo-pack-4.jpg";
+import zmNatMaint1 from "@/assets/products/zoo-med-natural-maintenance-1.jpg";
+import zmNatMaint2 from "@/assets/products/zoo-med-natural-maintenance-2.jpg";
+import zmNatMaint3 from "@/assets/products/zoo-med-natural-maintenance-3.jpg";
+import zmNatMaint4 from "@/assets/products/zoo-med-natural-maintenance-4.jpg";
+import zmNatMaint5 from "@/assets/products/zoo-med-natural-maintenance-5.jpg";
+import zmNatMaint6 from "@/assets/products/zoo-med-natural-maintenance-6.jpg";
+import zmNatMaint7 from "@/assets/products/zoo-med-natural-maintenance-7.jpg";
+import zmNatMaint8 from "@/assets/products/zoo-med-natural-maintenance-8.jpg";
+import zmThermostat1 from "@/assets/products/zoo-med-thermostat-1.jpg";
+import zmTurtleLighting1 from "@/assets/products/zoo-med-turtle-lighting-1.jpg";
+import zmTurtleLighting2 from "@/assets/products/zoo-med-turtle-lighting-2.jpg";
+import zmTurtleLighting3 from "@/assets/products/zoo-med-turtle-lighting-3.jpg";
+import zmTurtleLighting4 from "@/assets/products/zoo-med-turtle-lighting-4.jpg";
+import zmTurtleLighting5 from "@/assets/products/zoo-med-turtle-lighting-5.jpg";
+import zmTurtleLighting6 from "@/assets/products/zoo-med-turtle-lighting-6.jpg";
+import zmTortoise1 from "@/assets/products/zoo-med-tortoise-grassland-1.jpg";
+import zmTortoise2 from "@/assets/products/zoo-med-tortoise-grassland-2.jpg";
+import zmTortoise3 from "@/assets/products/zoo-med-tortoise-grassland-3.jpg";
+import zmTortoise4 from "@/assets/products/zoo-med-tortoise-grassland-4.jpg";
+import zmTortoise5 from "@/assets/products/zoo-med-tortoise-grassland-5.jpg";
+import zmTortoise6 from "@/assets/products/zoo-med-tortoise-grassland-6.jpg";
+import zmTortoise7 from "@/assets/products/zoo-med-tortoise-grassland-7.jpg";
+import zmTortoise8 from "@/assets/products/zoo-med-tortoise-grassland-8.jpg";
+import zmReptisoil1 from "@/assets/products/zoo-med-reptisoil-1.jpg";
+import zmReptisoil2 from "@/assets/products/zoo-med-reptisoil-2.jpg";
+import zmReptisoil3 from "@/assets/products/zoo-med-reptisoil-3.jpg";
 
 export interface StaticProduct {
   id: string;
@@ -521,6 +551,120 @@ export const staticProducts: StaticProduct[] = [
       { url: aqClarifier6, altText: "Aqueon Water Clarifier clear water after" },
       { url: aqClarifier7, altText: "Aqueon Water Clarifier product info" },
       { url: aqClarifier8, altText: "Aqueon Water Clarifier product line" },
+    ],
+    availableForSale: false,
+  },
+  {
+    id: "zoo-med-turtle-combo-pack",
+    handle: "zoo-med-turtle-combo-pack",
+    title: "Zoo Med Turtle Lamp Combo Pack",
+    description: "Everything you need to keep your aquatic turtle healthy in one convenient combo pack. Includes Zoo Med ReptiTuff Splashproof Halogen Lamp for basking heat and a UVB lamp for essential UV exposure. UVB lighting is critical to reptile health, supporting calcium metabolism and helping turtles develop strong, healthy shells. The halogen lamp provides intense, focused basking heat that mimics natural sunlight. Perfect for all aquatic turtle species.",
+    price: "28.12",
+    currencyCode: "USD",
+    category: "Small Animals",
+    brand: "Zoo Med",
+    rating: 4.2,
+    images: [
+      { url: zmTurtleCombo1, altText: "Zoo Med Turtle Lamp Combo Pack" },
+      { url: zmTurtleCombo2, altText: "Zoo Med Turtle Combo UVB lamp" },
+      { url: zmTurtleCombo3, altText: "Zoo Med Turtle Combo halogen lamp" },
+      { url: zmTurtleCombo4, altText: "Zoo Med Turtle Combo pack contents" },
+    ],
+    availableForSale: false,
+  },
+  {
+    id: "zoo-med-natural-maintenance",
+    handle: "zoo-med-natural-maintenance",
+    title: "Zoo Med Natural Aquatic Turtle Food, Maintenance Formula, 24-Ounce",
+    description: "Complete daily nutrition for adult aquatic turtles. This maintenance formula is scientifically formulated to meet the dietary needs of adult turtles over 6 inches. Features 5/16-inch floating pellets that turtles can easily see and consume at the surface. Made with natural ingredients — no artificial colors or preservatives. Provides balanced protein, vitamins, and minerals to support long-term health, shell integrity, and immune function.",
+    price: "14.98",
+    currencyCode: "USD",
+    category: "Small Animals",
+    brand: "Zoo Med",
+    rating: 4.8,
+    images: [
+      { url: zmNatMaint1, altText: "Zoo Med Natural Aquatic Turtle Food Maintenance 24oz" },
+      { url: zmNatMaint2, altText: "Zoo Med Turtle Food pellets close-up" },
+      { url: zmNatMaint3, altText: "Zoo Med Turtle Food nutritional info" },
+      { url: zmNatMaint4, altText: "Zoo Med Turtle Food ingredients" },
+      { url: zmNatMaint5, altText: "Zoo Med Turtle Food feeding guide" },
+      { url: zmNatMaint6, altText: "Zoo Med Turtle Food with turtle" },
+      { url: zmNatMaint7, altText: "Zoo Med Turtle Food size variants" },
+      { url: zmNatMaint8, altText: "Zoo Med Natural Turtle Food product line" },
+    ],
+    availableForSale: false,
+  },
+  {
+    id: "zoo-med-repti-temp-thermostat",
+    handle: "zoo-med-repti-temp-thermostat",
+    title: "Zoo Med ReptiTemp Digital Thermostat",
+    description: "Precise digital thermostat for controlling heat sources in reptile enclosures. Temperature control range of 50°F to 122°F in both HEAT and COOL modes — turns on heating devices in HEAT mode or cooling devices such as fans in COOL mode. Includes a remote temperature sensor with 6-foot cable for accurate in-enclosure readings. Controls up to 600 watts of heating devices or 150 watts of cooling devices. Built-in memory stores settings in case of power failure. Alarm flashes and sounds when temperature reaches extreme high or low levels.",
+    price: "46.34",
+    currencyCode: "USD",
+    category: "Small Animals",
+    brand: "Zoo Med",
+    rating: 4.4,
+    images: [
+      { url: zmThermostat1, altText: "Zoo Med ReptiTemp Digital Thermostat" },
+    ],
+    availableForSale: false,
+  },
+  {
+    id: "zoo-med-aquatic-turtle-lighting-kit",
+    handle: "zoo-med-aquatic-turtle-lighting-kit",
+    title: "Zoo Med Aquatic Turtle UVB & Heat Lighting Kit",
+    description: "Complete lighting solution for aquatic turtle enclosures combining ReptiTuff Splashproof Halogen basking heat with UVB lighting in a Mini Combo Deep Dome Lamp Fixture. The deep dome design extends beyond the face of the lamp, directing light and heat downward for optimal coverage. UVB exposure is essential for calcium synthesis and long-term turtle health. Splash-proof construction is safe for humid, water-based terrarium environments.",
+    price: "55.67",
+    currencyCode: "USD",
+    category: "Small Animals",
+    brand: "Zoo Med",
+    rating: 4.2,
+    images: [
+      { url: zmTurtleLighting1, altText: "Zoo Med Aquatic Turtle Lighting Kit" },
+      { url: zmTurtleLighting2, altText: "Zoo Med Turtle Lighting deep dome fixture" },
+      { url: zmTurtleLighting3, altText: "Zoo Med Turtle Lighting UVB lamp" },
+      { url: zmTurtleLighting4, altText: "Zoo Med Turtle Lighting halogen lamp" },
+      { url: zmTurtleLighting5, altText: "Zoo Med Turtle Lighting setup guide" },
+      { url: zmTurtleLighting6, altText: "Zoo Med Turtle Lighting in enclosure" },
+    ],
+    availableForSale: false,
+  },
+  {
+    id: "zoo-med-tortoise-grassland-food",
+    handle: "zoo-med-tortoise-grassland-food",
+    title: "Zoo Med Natural Tortoise Food, Grassland Formula, 35-Ounce",
+    description: "A natural grassland-based diet formulated for grazing tortoise species including Russian, Greek, Sulcata, Leopard, and Pancake tortoises. Crafted to mimic the high-fiber, low-protein diet these species thrive on in the wild. Enhanced with added vitamins and minerals to support shell growth, immune function, and overall vitality. No artificial colors or preservatives. High fiber content supports healthy digestive function.",
+    price: "21.59",
+    currencyCode: "USD",
+    category: "Small Animals",
+    brand: "Zoo Med",
+    rating: 4.5,
+    images: [
+      { url: zmTortoise1, altText: "Zoo Med Natural Tortoise Food Grassland 35oz" },
+      { url: zmTortoise2, altText: "Zoo Med Tortoise Food ingredients" },
+      { url: zmTortoise3, altText: "Zoo Med Tortoise Food nutritional info" },
+      { url: zmTortoise4, altText: "Zoo Med Tortoise Food with tortoise" },
+      { url: zmTortoise5, altText: "Zoo Med Tortoise Food pellets close-up" },
+      { url: zmTortoise6, altText: "Zoo Med Tortoise Food feeding guide" },
+      { url: zmTortoise7, altText: "Zoo Med Tortoise Food size variants" },
+      { url: zmTortoise8, altText: "Zoo Med Natural Tortoise Food product line" },
+    ],
+    availableForSale: false,
+  },
+  {
+    id: "zoo-med-reptisoil-10qt",
+    handle: "zoo-med-reptisoil-10qt",
+    title: "Zoo Med Reptisoil, 10 Qt.",
+    description: "Premium bioactive substrate blend for tropical and forest reptile and amphibian enclosures. Contains coconut carbon that provides a porous surface for beneficial bacteria to colonize, naturally reducing persistent odors. Ideal for naturalistic terrariums and paludariums housing tropical lizards, amphibians, box turtles, hermit crabs, tarantulas, and other invertebrates. Supports natural burrowing and egg-laying behaviors. Retains moisture well for humidity-dependent species.",
+    price: "10.99",
+    currencyCode: "USD",
+    category: "Small Animals",
+    brand: "Zoo Med",
+    rating: 4.6,
+    images: [
+      { url: zmReptisoil1, altText: "Zoo Med Reptisoil 10 Qt bag" },
+      { url: zmReptisoil2, altText: "Zoo Med Reptisoil substrate texture" },
+      { url: zmReptisoil3, altText: "Zoo Med Reptisoil in terrarium" },
     ],
     availableForSale: false,
   },

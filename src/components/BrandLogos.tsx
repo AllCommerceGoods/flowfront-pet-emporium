@@ -3,6 +3,7 @@ import pureBitesLogo from "@/assets/purebites-logo.png";
 import jollyPetsLogo from "@/assets/jolly-pets-logo.png";
 import horseAmourLogo from "@/assets/horse-amour-logo.jpeg";
 import aqueonLogo from "@/assets/aqueon-logo.png";
+import zooMedLogo from "@/assets/zoo-med-logo.jpeg";
 
 const brands = [
   { src: roudybushLogo, alt: "Roudybush" },
@@ -10,6 +11,7 @@ const brands = [
   { src: jollyPetsLogo, alt: "Jolly Pets" },
   { src: horseAmourLogo, alt: "Horse Amour" },
   { src: aqueonLogo, alt: "Aqueon" },
+  { src: zooMedLogo, alt: "Zoo Med" },
 ];
 
 const marqueeItems = [...brands, ...brands, ...brands, ...brands, ...brands, ...brands];
