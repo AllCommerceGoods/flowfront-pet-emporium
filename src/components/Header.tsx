@@ -9,6 +9,7 @@ import logoImg from "@/assets/flowfront-logo-light.png";
 const navLinks = [
   { label: "Shop All", to: "/shop" },
   { label: "About Us", to: "/about" },
+  { label: "Retail Partners", to: "/retail-partner" },
   { label: "Contact Us", to: "/contact" },
 ];
 

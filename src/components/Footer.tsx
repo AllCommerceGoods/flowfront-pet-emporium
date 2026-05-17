@@ -69,6 +69,11 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/retail-partner" className="opacity-65 hover:opacity-100 hover:text-primary transition-all duration-200 font-medium cursor-pointer">
+                  Retail Partners
+                </Link>
+              </li>
+              <li>
                 <Link to="/contact" className="opacity-65 hover:opacity-100 hover:text-primary transition-all duration-200 font-medium cursor-pointer">
                   Contact Us
                 </Link>
